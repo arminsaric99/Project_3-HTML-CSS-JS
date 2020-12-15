@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Resume </title>
+<link rel="stylesheet" href="stil.css">
+</head>
+<body>
+<div class="container">
+<nav>
+<div class="znak">
+<img src="arma.png">
+</div>
+<div class="link">
+<ul>
+<li><a href="resume.html"> Home </a></li>
+<li><a href="index.html"> My Resume </a></li>
+</ul>
+</div>
+</nav>
+
+<div class="info">
+<div class="hide"></div>
+<img src="Armin2.jpg" class="slika">
+<div id="kruznica">
+<div class="informations prva">
+
+<div>
+<h1> Name  </h1>
+<p> Armin Šarić </p>
+</div>
+</div>
+<div class="informations druga">
+
+<div>
+<h1> Age </h1>
+<p> 21 </p>
+</div>
+</div>
+<div class="informations treca">
+
+<div>
+<h1> City </h1>
+<p> Stolac/Sarajevo </p>
+</div>
+</div>
+<div class="informations cetvrta">
+
+<div>
+<h1> Nationality </h1>
+<p> BiH </p>
+</div>
+</div>
+
+</div>
+</div>
+<div class="strelice">
+<img src="arrow.png" id="gore">
+<h3> Basic Informations </h3>
+<img src="arrow.png" id="dole">
+</div>
+
+</div>
+
+<script>
+var kruznica = document.getElementById("kruznica");
+var gore = document.getElementById("gore");
+var dole = document.getElementById("dole");
+var rotateValue = kruznica.style.transform;
+var rotateSum;
+
+gore.onclick = function(){
+rotateSum = rotateValue + "rotate(-90deg)";
+kruznica.style.transform = rotateSum;
+rotateValue = rotateSum;
+}
+
+dole.onclick = function(){
+rotateSum = rotateValue + "rotate(90deg)";
+kruznica.style.transform = rotateSum;
+rotateValue = rotateSum;
+}
+
+</script>
+</body>
+</html>
